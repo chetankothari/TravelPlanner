@@ -1,12 +1,12 @@
 package android.bootcamp.projectplanner;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 
-public class ProjectPlannerActivity extends ActionBarActivity {
+public class ProjectPlannerActivity extends Activity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -14,4 +14,8 @@ public class ProjectPlannerActivity extends ActionBarActivity {
     setContentView(R.layout.activity_project_planner);
   }
 
+  public void calculate(View view) {
+    TextView result = (TextView) findViewById(R.id.number_of_iterations);
+    result.setText("25");
+  }
 }
