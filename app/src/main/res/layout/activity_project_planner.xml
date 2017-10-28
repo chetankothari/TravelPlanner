@@ -10,7 +10,7 @@
               android:gravity="center_horizontal">
   <EditText
       android:id="@+id/number_of_points"
-      android:hint="Total Points"
+      android:hint="Total Distance"
       android:gravity="center_horizontal"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
@@ -18,7 +18,7 @@
 
   <TextView
       android:id="@+id/number_of_iterations"
-      android:text="Number of Iterations Needed = "
+      android:text="Time Needed = "
       android:gravity="center_horizontal"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
