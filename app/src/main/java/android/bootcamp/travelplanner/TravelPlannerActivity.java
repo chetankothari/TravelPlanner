@@ -1,4 +1,4 @@
-package android.bootcamp.projectplanner;
+package android.bootcamp.travelplanner;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 
-public class ProjectPlannerActivity extends Activity {
+public class TravelPlannerActivity extends Activity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {

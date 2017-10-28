@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
-    package="android.bootcamp.projectplanner"
+    package="android.bootcamp.travelplanner"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
   <application android:allowBackup="true" android:icon="@mipmap/ic_launcher"
                android:label="@string/app_name" android:theme="@style/AppTheme">
     <activity
-        android:name=".ProjectPlannerActivity" android:label="@string/title_activity_project_planner">
+        android:name="android.bootcamp.travelplanner.TravelPlannerActivity" android:label="@string/title_activity_travel_planner">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
         <category android:name="android.intent.category.LAUNCHER"/>
