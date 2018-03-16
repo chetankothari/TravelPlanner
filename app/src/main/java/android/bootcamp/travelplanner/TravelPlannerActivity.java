@@ -11,11 +11,11 @@ public class TravelPlannerActivity extends Activity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_project_planner);
+    setContentView(R.layout.activity_travel_planner);
   }
 
   public void calculate(View view) {
-    TextView result = (TextView) findViewById(R.id.number_of_iterations);
+    TextView result = (TextView) findViewById(R.id.time);
     result.setText("25");
   }
 }
