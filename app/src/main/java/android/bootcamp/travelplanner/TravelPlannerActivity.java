@@ -10,6 +10,9 @@ import android.widget.TextView;
 
 public class TravelPlannerActivity extends Activity {
 
+  public static final String BUFFERED_TIME = "android.bootcamp.travelplanner.BUFFERED_TIME";
+  public static final int REQUEST_BUFFERED_TIME = 1;
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -33,6 +36,16 @@ public class TravelPlannerActivity extends Activity {
 
     Intent intent = new Intent(this, TimeActivity.class);
     intent.putExtra(TimeActivity.TIME_RESULT, strResult);
-    startActivity(intent);
+    startActivityForResult(intent, REQUEST_BUFFERED_TIME);
+  }
+
+  @Override
+  protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    if (requestCode == REQUEST_BUFFERED_TIME) {
+      if (resultCode == RESULT_OK) {
+        TextView result = findViewById(R.id.buffered_time);
+        result.setText(data.getStringExtra(BUFFERED_TIME));
+      }
+    }
   }
 }
