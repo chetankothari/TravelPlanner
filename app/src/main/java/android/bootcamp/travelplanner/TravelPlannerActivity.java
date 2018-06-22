@@ -41,6 +41,7 @@ public class TravelPlannerActivity extends Activity {
 
   @Override
   protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    super.onActivityResult(requestCode, resultCode, data);
     if (requestCode == REQUEST_BUFFERED_TIME) {
       if (resultCode == RESULT_OK) {
         TextView result = findViewById(R.id.buffered_time);
