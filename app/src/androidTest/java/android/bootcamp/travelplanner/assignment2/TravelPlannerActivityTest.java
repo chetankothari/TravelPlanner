@@ -31,6 +31,5 @@ public class TravelPlannerActivityTest {
 
         onView(withId(android.bootcamp.travelplanner.R.id.calculate)).perform(click());
         onView(withId(android.bootcamp.travelplanner.R.id.time_new_activity)).check(matches(withText(("33"))));
-
     }
 }
