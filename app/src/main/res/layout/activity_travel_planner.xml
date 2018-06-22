@@ -47,5 +47,18 @@
         android:layout_marginTop="20dp"
         android:text="@string/calculate"
         android:onClick="calculate"/>
+
+    <Button
+        android:id="@+id/captureImage"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/capture_photo"
+        android:onClick="dispatchTakePictureIntent"/>
+
+    <ImageView
+        android:id="@+id/myImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
   </LinearLayout>
 </layout>
