@@ -16,11 +16,18 @@ public class TravelPlannerActivity extends Activity {
   }
 
   public void calculate(View view) {
-    int distance = Integer.parseInt(((EditText) findViewById(R.id.distance)).getText().toString());
-    int velocity = Integer.parseInt(((EditText) findViewById(R.id.velocity)).getText().toString());
-    int result = distance / velocity;
-    TextView resultView = (TextView) findViewById(R.id.time);
-    String resultString = String.valueOf(result);
-    resultView.setText(resultString);
+    EditText distanceEdit = findViewById(R.id.distance);
+    String distanceString = distanceEdit.getText().toString();
+    int distance = Integer.parseInt(distanceString);
+
+    EditText velocityEdit = findViewById(R.id.velocity);
+    String velocityString = velocityEdit.getText().toString();
+    int velocity = Integer.parseInt(velocityString);
+
+    int time = distance / velocity;
+
+    TextView result = findViewById(R.id.time);
+    String strResult = String.valueOf(time);
+    result.setText(strResult);
   }
 }

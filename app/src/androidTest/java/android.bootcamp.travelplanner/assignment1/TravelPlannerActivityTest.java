@@ -31,7 +31,14 @@ public class TravelPlannerActivityTest {
 
         onView(withId(android.bootcamp.travelplanner.R.id.calculate)).perform(click());
         onView(withId(android.bootcamp.travelplanner.R.id.time)).check(matches(withText(("33"))));
-
     }
 
+    @Test
+    public void calculateTimeTakenByDividingDistanceByVelocityFor500() {
+        onView(withId(android.bootcamp.travelplanner.R.id.distance)).perform(typeText("500"));
+        onView(withId(android.bootcamp.travelplanner.R.id.velocity)).perform(typeText("5"));
+
+        onView(withId(android.bootcamp.travelplanner.R.id.calculate)).perform(click());
+        onView(withId(android.bootcamp.travelplanner.R.id.time)).check(matches(withText(("100"))));
+    }
 }
